@@ -25,13 +25,12 @@
     }
 
     .produtos {
-        padding: 40px;
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 
     .produto {
-        width: calc(25% - 20px);
         margin: 10px;
         padding: 20px;
         border: 1px solid #ddd;
@@ -61,14 +60,12 @@
     }
 
     .produtos {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     
     .produto {
-        width: calc(50% - 20px);
         margin: 10px;
         padding: 20px;
         border: 1px solid #ddd;
@@ -93,8 +90,17 @@
         height: auto;
     }
 
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
     .produto {
-        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        text-align: center;
     }
 }
 
